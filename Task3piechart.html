@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Distribution</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: white;
+            font-family: "Comic Sans MS", "Segoe Print", cursive;
+        }
+
+        .chart {
+            width: 800px;
+            height: 800px;
+            margin: 20px auto;
+        }
+
+        .slice {
+            fill: #fff2a8;
+            stroke: #f28c00;
+            stroke-width: 10;
+        }
+
+        .green {
+            fill: #198f48;
+            font-size: 28px;
+        }
+
+        .blue {
+            fill: #1769aa;
+            font-size: 26px;
+        }
+    </style>
+</head>
+
+<body>
+
+<svg class="chart" viewBox="0 0 800 800">
+
+    
+    <path class="slice"
+        d="M400 400
+           L400 20
+           A380 380 0 0 1 626 95
+           Z" />
+
+
+    <path class="slice"
+        d="M400 400
+           L626 95
+           A380 380 0 0 1 776 340
+           Z" />
+
+
+    <path class="slice"
+        d="M400 400
+           L776 340
+           A380 380 0 0 1 400 780
+           Z" />
+
+    
+    <path class="slice"
+        d="M400 400
+           L400 780
+           A380 380 0 0 1 55 315
+           Z" />
+
+   
+    <path class="slice"
+        d="M400 400
+           L55 315
+           A380 380 0 0 1 400 20
+           Z" />
+
+
+
+    <text x="440" y="100" class="green">
+        &gt;0 &amp; &lt;35
+    </text>
+
+    <text x="440" y="145" class="blue">
+        12 students
+    </text>
+
+
+    <text x="560" y="250" class="green">
+        &gt;35 &amp; &lt;55
+    </text>
+
+    <text x="560" y="295" class="blue">
+        14 students
+    </text>
+
+
+    <text x="470" y="550" class="green">
+        &gt;55 &amp; &lt;75
+    </text>
+
+    <text x="470" y="595" class="blue">
+        42 students
+    </text>
+
+
+    <text x="80" y="470" class="green">
+        &gt;76 &amp; &lt;90
+    </text>
+
+    <text x="105" y="515" class="blue">
+        22 students
+    </text>
+
+
+    <text x="100" y="180" class="green">
+        &gt;  91 &amp; &lt;100
+    </text>
+
+    <text x="130" y="225" class="blue">
+        4 students
+    </text>
+
+</svg>
+
+</body>
+</html>
