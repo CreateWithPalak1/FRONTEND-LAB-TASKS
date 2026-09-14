@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        .linear {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(to right, red, yellow,blue, green,black, white, orange, purple, pink);
+        }
+        .radial {
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, red, yellow,blue, green,black, white, orange, purple, pink);
+        }
+        .conic {
+            width: 200px;
+            height: 200px;
+            background: conic-gradient(red, yellow, green, blue, black, white, orange, purple, pink);
+        }
+        .repeating-linear {
+            width: 200px;
+            height: 200px;
+            background: repeating-linear-gradient(45deg, red, yellow 10px, blue 10px, green 20px);
+        }
+        .repeating-radial {
+            width: 200px;
+            height: 200px;
+            background: repeating-radial-gradient(circle, red, yellow 10px, blue 10px, green 20px);
+        }
+        .rotating {
+            width: 200px;
+            height: 200px;
+            background: conic-gradient(red, yellow, green, blue, black, white, orange, purple, pink);
+            animation: rotate 5s linear infinite;
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .multiple-colors {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        }
+    </style>
+</head>
+<body>
+    <h1>Gradient</h1>
+    <h2>Linear Gradient</h2>
+    <div class="linear"></div>
+    <h2>Radial Gradient</h2>
+    <div class="radial"></div>
+    <h2>Conic Gradient</h2>
+    <div class="conic"></div>
+    <h2>Repeating Linear Gradient</h2>
+    <div class="repeating-linear"></div>            
+    <h2>Repeating Radial Gradient</h2>
+    <div class="repeating-radial"></div>
+    <h2>Rotating Gradient</h2>
+    <div class="rotating"></div>
+    <h2>Multiple Color Stops</h2>
+    <div class="multiple-colors"></div>
+</body>
+</html>
